@@ -1,0 +1,11 @@
+﻿#mainMenuButton {
+    width: 200px;
+    height: 50px;
+    color: #AC3B61;
+    border: 1px solid #AC3B61;
+}
+
+#mainMenuButtonContainer{
+    position: absolute;
+    left:10px; top:10px;
+}

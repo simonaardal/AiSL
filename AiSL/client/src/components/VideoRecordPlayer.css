@@ -1,0 +1,41 @@
+#videoImageWrapper{
+    width: 100%;
+    margin: auto;
+}
+
+
+#videoWrapper{
+    width: 100%;
+    margin: auto;
+    max-height: 100%;
+}
+
+#sendBtn{
+    width: 200px;
+    background-color: #AC3B61;
+    color: white;
+    padding: 5px 0 5px 0;
+    margin-bottom: 50px;
+}
+
+#sendBtn:hover{
+    background-color: rgba(105,44,44,0.99)
+}
+
+#btnContainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 40px auto auto auto;
+}
+
+#sendBtn:disabled{
+    background-color: #bbbbbb;
+}
+
+@media only screen and (max-width: 1000px){
+
+    #videoWrapper{
+        width: 100%;
+    }
+}

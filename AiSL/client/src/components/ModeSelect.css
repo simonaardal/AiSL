@@ -1,0 +1,114 @@
+div#root {
+    height: 100%;
+}
+
+/* wrapper for the page (including the footer) */
+#modeSelectWrapper{
+    height: 100%;
+}
+
+/* wrapper for the content (the page excluding the footer) */
+#modeSelectContent{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+/* wrapper for the grid containing the different modes to choose from. */
+#modeSelectGridContainer{
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid lightgrey;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/* left grid (the one containing the text "choose your mode") */
+#chooseGrid{
+    border-right: 1px solid #D8D3DE;
+    text-align: center;
+    width: 30%;
+}
+
+#chooseGrid h2{
+    font-size: 24px;
+}
+
+/* container for the text itself in the choose-grid */
+#chooseTextContainer{
+    margin-top: 200px;
+    padding: 0 20px 0 20px;
+}
+
+/* right grid containing the four different modes to choose from */
+#itemsContainer{
+    width: 70%;
+}
+
+/* every item in the right grid */
+.modeSelectGridItem{
+    padding: 10px 30px 20px 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.modeSelectGridItem h1{
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: lighter;
+}
+
+.modeSelectGridItem p{
+    font-size: 14px;
+}
+
+#lastItem{
+    border: none;
+}
+
+#chooseModeBtn{
+    color: #AC3B61;
+    border: 1px solid #AC3B61;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 160px;
+    font-weight: bold;
+}
+
+/* restructuring the page when screen is thinner than 1100 pixels. */
+@media only screen and (max-width: 1100px){
+
+    #modeSelectGridContainer{
+        margin-bottom: 50px;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        align-content: space-evenly;
+    }
+
+    #chooseGrid{
+        width: 100%;
+        height: 100px;
+        border-right: none;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    #chooseTextContainer{
+        margin-top:0;
+        position: relative;
+        top: 13px;
+    }
+
+    .modeSelectGridItem{
+        width: 100%;
+    }
+    #itemsContainer{
+        width: 100%;
+    }
+}

@@ -1,0 +1,169 @@
+.practicewrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F8;
+    font-family: Roboto, "sans-serif";
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.practicepage {
+    background-color: #F5F5F8;
+    font-family: Roboto, "sans-serif";
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.changeBtn {
+    background-color: #AC3B61;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-family: Roboto, "sans-serif";
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.GIFCard {
+    height: 40%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 25px;
+
+}
+
+.GIFCard p{
+    line-height: 150px;
+}
+.titleCard {
+    height: 100px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #F5F5F8;
+}
+.switchBtn {
+    width: 100%;
+    text-align: center;
+}
+.backgroundCard{
+    width: 60%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom: 9%;
+    left: 0;
+    right: 0;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    margin-top: 10px;
+    left: calc(50% - 250px);
+    position: absolute;
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #AC3B61;
+    font-family: Roboto, "sans-serif";
+    font-weight: bolder;
+    border-radius: 10px;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flashimg {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#randomBtn {
+    width: 150px;
+    position: absolute;
+    top: calc(50% + 275px);
+    left: calc(50% - 75px);
+    background-color: #AC3B61;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-family: Roboto, "sans-serif";
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    .GIFCard{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .GIFCard img{
+        height: 250px;
+    }
+
+    .switchBtn{
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .switchBtn{
+        margin-top:75px;
+    }
+    .GIFCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .GIFCard img{
+        height: 230px;
+    }
+}

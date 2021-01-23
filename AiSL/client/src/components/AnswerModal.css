@@ -1,0 +1,56 @@
+#modal{
+    text-align: center;
+}
+
+#answerModalDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 0 5% 0;
+}
+
+#skeletonContainer{
+    width: 40%;
+    margin: auto;
+}
+
+.gifContainer{
+    width: 49%;
+}
+
+.gifContainer img{
+    width: 100%;
+}
+
+#playerWrapper{
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+#reactPlayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#closeModalBtn{
+    width: 200px;
+    margin: auto auto 5% auto;
+    background-color: white;
+    border: 1px solid #AC3B61;
+    font-size: 16px;
+    color: #AC3B61;
+}
+
+@media only screen and (max-width: 800px){
+
+    #answerModalDiv{
+        flex-direction: column;
+    }
+    
+    .gifContainer{
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+/* define height for wrapper's parent div */
+div#root {
+    height: 100%;
+}
+
+#mainMenuWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#mainMenuContentWrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto -50px;
+}
+
+#mainMenuContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainMenuContentBox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#imgBox{
+    width: 60%;
+}
+
+#imgContainer{
+    width: 100%;
+    min-height: 865px;
+}
+
+#imgContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#textContainerWrapper{
+    margin: auto;
+    display: inline-block;
+    padding: 10px;
+    width: 70%;
+}
+
+#textContainer{
+    word-break: break-word;
+}
+
+#textContainer h1{
+    font-size: 70px;
+    line-height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: lighter;
+}
+
+#titleDivider{
+    border: 3px solid #AC3B61;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: 50px;
+    position: relative;
+    right: 20%;
+}
+
+#textContainer h3{
+    position: relative;
+    bottom: 10px;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: lighter;
+}
+
+#startLearningBtn{
+    margin: auto;
+    background-color: #AC3B61;
+    font-size: 16px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: bolder;
+    width: 200px;
+}
+
+#startLearningBtn:hover{
+    background-color: rgba(105,44,44,0.99)
+}
+
+@media only screen and (max-width: 1200px){
+
+    #imgBox{
+        display:none;
+    }
+
+    .mainMenuContentBox{
+        width: 100%;
+    }
+
+    #mainMenuContentWrapper{
+        justify-content: space-evenly;
+    }
+
+    #mainMenuContent{
+        width: 100%;
+    }
+
+    #textContainer{
+        word-wrap: break-word;
+        text-align: center;
+        width: 100%;
+    }
+
+    #textContainer h1{
+        line-height: 80px;
+    }
+
+    #textContainer h3{
+        line-height: 40px;
+    }
+
+    #titleDivider{
+        border: 3px solid #AC3B61;
+        border-radius: 10px;
+        width: 50%;
+        position: static;
+        margin-top:0;
+    }
+
+    #startLearningBtnContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
